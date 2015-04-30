@@ -1,0 +1,16 @@
+{
+    "contents" : "#iris_example\n#ui.R\nlibrary(shiny)\nlibrary(ggvis)\n\nshinyUI(fluidPage(\n  titlePanel(\"Exploring Clusters in Iris Data\"),\n  sidebarLayout(\n    sidebarPanel(\n      selectInput(inputId = \"distance\", label = \"Distance Metric\",\n                  choices = c(\"euclidean\", \"correlation\")),\n      numericInput(\"clusters\", \"Cluster Count\", 3, min = 1, max=9),\n      dataTableOutput(\"table\")  \n    ),\n    mainPanel(\n      ggvisOutput(\"plot2\")\n    )\n  )\n))",
+    "created" : 1429737250318.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1305817148",
+    "id" : "AA231DC5",
+    "lastKnownWriteTime" : 1430400101,
+    "path" : "~/Code/ggvis-intro/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

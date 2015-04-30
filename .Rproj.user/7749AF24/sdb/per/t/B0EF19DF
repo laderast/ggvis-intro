@@ -1,0 +1,16 @@
+{
+    "contents" : "#iris_example\n#server.R\nrequire(shiny)\nrequire(dplyr)\nrequire(ggvis)\nrequire(reshape2)\n\ndata(iris)\niris <- data.frame(ID=rownames(iris), iris)\niris2 <- melt(iris, ID=ID)\n\niris_tooltip <- function(x){\n  if(is.null(x)){return(NULL)}\n  if(is.null(x$ID)){return(NULL)}\n  g <- iris[as.numeric(x$ID),]\n  paste0(\"<b>Information for data point </b>\", g$ID, \"<br>\",\n         \"<b>Species: </b>\", g$Species\n  )\n}  \n  \nif(0){\niris2 %>% ggvis(x=~variable, y=~ID, fill=~value) %>%\n  layer_rects(width=band(), height=band()) %>%\n  scale_ordinal(\"x\", padding = 0, points=FALSE) %>%\n  scale_ordinal(\"y\", padding = 0, points=FALSE, domain = c(1:nrow(iris))) %>%\n  add_tooltip(iris_tooltip, \"hover\")\n}\n\nshinyServer(function(input, output) {\n  \n  clusters <- reactive({\n    #select distance metric\n    if(input$distance == \"euclidean\"){\n      distMat <- dist(iris[,-c(1,6)])\n    }\n    \n    if(input$distance == \"correlation\"){\n      distMat <- as.dist(1-cor(t(iris[,-c(1,6)])))\n    }\n    \n    #run clustering algorithm and cut tree to number of clusters\n    clusts <- cutree(hclust(distMat), k = input$clusters)    \n    clusts \n  })\n  \n  output$table <- renderDataTable({\n    #count the number of flowers in each cluster\n    data.frame(table(clusters()))\n  })\n  \n  clustPlot <- reactive({\n    \n    colPal <- c(\"#E41A1C\", \"#377EB8\", \"#4DAF4A\", \"#984EA3\",\n                \"#FF7F00\", \"#FFFF33\", \"#A65628\", \"#F781BF\", \"#999999\")\n    #make cluster assignments compatible with melted iris data frame\n    clusts <- as.character(rep(clusters(),4))\n    \n    #actual plot\n    data.frame(iris2, clusts) %>% \n      #map properties\n      ggvis(x=~variable, y=~value) %>%\n      #group by ID (so each flower is represented by a line)\n      group_by(ID) %>%\n      #add tooltip functionality (lets us see the species for a line)\n      add_tooltip(iris_tooltip, \"hover\") %>%\n      #specify that we want a line and color by cluster assingment\n      layer_lines(stroke=~clusts) %>%\n      #specify the mapping\n      scale_ordinal(\"stroke\", domain=as.character(c(1:9)), range=colPal)\n      \n  }) \n  \n  clustPlot %>% bind_shiny(\"plot2\")\n  \n  \n})",
+    "created" : 1429737213641.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "392530513",
+    "id" : "B0EF19DF",
+    "lastKnownWriteTime" : 1430425948,
+    "path" : "~/Code/ggvis-intro/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
