@@ -96,27 +96,27 @@ Ted Laderas
 <pre class="sourceCode r"><code class="sourceCode r">iris %&gt;%<span class="st"> </span><span class="kw">ggvis</span>() %&gt;%<span class="st"> </span><span class="kw">layer_points</span>(<span class="dt">x=</span>~Sepal.Width, <span class="dt">y=</span>~Sepal.Length, 
                                   <span class="dt">fill=</span>~Species) %&gt;%
 <span class="st">  </span><span class="kw">scale_ordinal</span>(<span class="dt">property=</span><span class="st">&quot;fill&quot;</span>, <span class="dt">range =</span> <span class="kw">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;blue&quot;</span>))</code></pre>
-<p><div id="plot_id847250657-container" class="ggvis-output-container">
-<div id="plot_id847250657" class="ggvis-output"></div>
+<p><div id="plot_id983668581-container" class="ggvis-output-container">
+<div id="plot_id983668581" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id847250657_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id847250657" data-renderer="svg">SVG</a>
+<a id="plot_id983668581_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id983668581" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id847250657_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id847250657" data-renderer="canvas">Canvas</a>
+<a id="plot_id983668581_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id983668581" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id847250657_download" class="ggvis-download" data-plot-id="plot_id847250657">Download</a>
+<a id="plot_id983668581_download" class="ggvis-download" data-plot-id="plot_id983668581">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id847250657_spec = {
+var plot_id983668581_spec = {
   "data": [
     {
       "name": ".0",
@@ -265,7 +265,7 @@ var plot_id847250657_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id847250657").parseSpec(plot_id847250657_spec);
+ggvis.getPlot("plot_id983668581").parseSpec(plot_id983668581_spec);
 </script></p>
 </div>
 <div id="coming-from-ggplot2-weve-got-you-covered." class="slide section level2">
@@ -328,27 +328,27 @@ ggvis.getPlot("plot_id847250657").parseSpec(plot_id847250657_spec);
 <pre class="sourceCode r"><code class="sourceCode r">iris %&gt;%<span class="st"> </span><span class="kw">mutate</span>(<span class="dt">sepalRatio =</span> Sepal.Width /<span class="st"> </span>Sepal.Length, 
                 <span class="dt">petalRatio =</span> Petal.Width /<span class="st"> </span>Petal.Length) %&gt;%
 <span class="st">  </span><span class="kw">ggvis</span>() %&gt;%<span class="st"> </span><span class="kw">layer_points</span>(<span class="dt">x=</span>~sepalRatio, <span class="dt">y=</span>~petalRatio, <span class="dt">fill=</span>~Species)</code></pre>
-<p><div id="plot_id253919106-container" class="ggvis-output-container">
-<div id="plot_id253919106" class="ggvis-output"></div>
+<p><div id="plot_id874688018-container" class="ggvis-output-container">
+<div id="plot_id874688018" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id253919106_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id253919106" data-renderer="svg">SVG</a>
+<a id="plot_id874688018_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id874688018" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id253919106_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id253919106" data-renderer="canvas">Canvas</a>
+<a id="plot_id874688018_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id874688018" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id253919106_download" class="ggvis-download" data-plot-id="plot_id253919106">Download</a>
+<a id="plot_id874688018_download" class="ggvis-download" data-plot-id="plot_id874688018">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id253919106_spec = {
+var plot_id874688018_spec = {
   "data": [
     {
       "name": ".0",
@@ -497,7 +497,7 @@ var plot_id253919106_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id253919106").parseSpec(plot_id253919106_spec);
+ggvis.getPlot("plot_id874688018").parseSpec(plot_id874688018_spec);
 </script></p>
 </div>
 <div id="what-properties-exist" class="slide section level2">
@@ -521,27 +521,27 @@ ggvis.getPlot("plot_id253919106").parseSpec(plot_id253919106_spec);
 <pre class="sourceCode r"><code class="sourceCode r">iris %&gt;%<span class="st"> </span><span class="kw">ggvis</span>() %&gt;%<span class="st"> </span><span class="kw">layer_points</span>(<span class="dt">x=</span>~Sepal.Width, <span class="dt">y=</span>~Sepal.Length, 
                                   <span class="dt">fill=</span>~Species) %&gt;%
 <span class="st">  </span><span class="kw">scale_numeric</span>(<span class="st">&quot;x&quot;</span>, <span class="dt">domain =</span> <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">5</span>))</code></pre>
-<p><div id="plot_id726296692-container" class="ggvis-output-container">
-<div id="plot_id726296692" class="ggvis-output"></div>
+<p><div id="plot_id635846861-container" class="ggvis-output-container">
+<div id="plot_id635846861" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id726296692_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id726296692" data-renderer="svg">SVG</a>
+<a id="plot_id635846861_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id635846861" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id726296692_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id726296692" data-renderer="canvas">Canvas</a>
+<a id="plot_id635846861_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id635846861" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id726296692_download" class="ggvis-download" data-plot-id="plot_id726296692">Download</a>
+<a id="plot_id635846861_download" class="ggvis-download" data-plot-id="plot_id635846861">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id726296692_spec = {
+var plot_id635846861_spec = {
   "data": [
     {
       "name": ".0",
@@ -690,7 +690,7 @@ var plot_id726296692_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id726296692").parseSpec(plot_id726296692_spec);
+ggvis.getPlot("plot_id635846861").parseSpec(plot_id635846861_spec);
 </script></p>
 </div>
 <div id="unscaled-properties" class="slide section level2">
@@ -738,27 +738,27 @@ ggvis.getPlot("plot_id726296692").parseSpec(plot_id726296692_spec);
 <span class="st">  </span><span class="kw">layer_points</span>(<span class="dt">fill=</span>~Species) </code></pre>
 <pre><code>## Warning: Can't output dynamic/interactive ggvis plots in a knitr document.
 ## Generating a static (non-dynamic, non-interactive) version of the plot.</code></pre>
-<p><div id="plot_id286910555-container" class="ggvis-output-container">
-<div id="plot_id286910555" class="ggvis-output"></div>
+<p><div id="plot_id872755379-container" class="ggvis-output-container">
+<div id="plot_id872755379" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id286910555_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id286910555" data-renderer="svg">SVG</a>
+<a id="plot_id872755379_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id872755379" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id286910555_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id286910555" data-renderer="canvas">Canvas</a>
+<a id="plot_id872755379_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id872755379" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id286910555_download" class="ggvis-download" data-plot-id="plot_id286910555">Download</a>
+<a id="plot_id872755379_download" class="ggvis-download" data-plot-id="plot_id872755379">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id286910555_spec = {
+var plot_id872755379_spec = {
   "data": [
     {
       "name": ".0/group_by1_flat",
@@ -1027,7 +1027,7 @@ var plot_id286910555_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id286910555").parseSpec(plot_id286910555_spec);
+ggvis.getPlot("plot_id872755379").parseSpec(plot_id872755379_spec);
 </script></p>
 </div>
 <div id="checkbox-in-action" class="slide section level2">
@@ -1041,27 +1041,27 @@ iris %&gt;%<span class="st"> </span><span class="kw">ggvis</span>(<span class="d
 <pre><code>## Guessing formula = Sepal.Length ~ Sepal.Width</code></pre>
 <pre><code>## Warning: Can't output dynamic/interactive ggvis plots in a knitr document.
 ## Generating a static (non-dynamic, non-interactive) version of the plot.</code></pre>
-<p><div id="plot_id516097123-container" class="ggvis-output-container">
-<div id="plot_id516097123" class="ggvis-output"></div>
+<p><div id="plot_id235089027-container" class="ggvis-output-container">
+<div id="plot_id235089027" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id516097123_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id516097123" data-renderer="svg">SVG</a>
+<a id="plot_id235089027_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id235089027" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id516097123_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id516097123" data-renderer="canvas">Canvas</a>
+<a id="plot_id235089027_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id235089027" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id516097123_download" class="ggvis-download" data-plot-id="plot_id516097123">Download</a>
+<a id="plot_id235089027_download" class="ggvis-download" data-plot-id="plot_id235089027">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id516097123_spec = {
+var plot_id235089027_spec = {
   "data": [
     {
       "name": ".0/group_by1_flat",
@@ -1330,7 +1330,7 @@ var plot_id516097123_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id516097123").parseSpec(plot_id516097123_spec);
+ggvis.getPlot("plot_id235089027").parseSpec(plot_id235089027_spec);
 </script></p>
 </div>
 <div id="keyboard-interactivity" class="slide section level2">
@@ -1339,39 +1339,39 @@ ggvis.getPlot("plot_id516097123").parseSpec(plot_id516097123_spec);
 iris %&gt;%<span class="st"> </span><span class="kw">ggvis</span>(~Sepal.Width, ~Sepal.Length, size :<span class="er">=</span><span class="st"> </span>keys_s, opacity :<span class="er">=</span><span class="st"> </span><span class="fl">0.5</span>) %&gt;%<span class="st"> </span><span class="kw">layer_points</span>()</code></pre>
 <pre><code>## Warning: Can't output dynamic/interactive ggvis plots in a knitr document.
 ## Generating a static (non-dynamic, non-interactive) version of the plot.</code></pre>
-<p><div id="plot_id118963654-container" class="ggvis-output-container">
-<div id="plot_id118963654" class="ggvis-output"></div>
+<p><div id="plot_id213481832-container" class="ggvis-output-container">
+<div id="plot_id213481832" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id118963654_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id118963654" data-renderer="svg">SVG</a>
+<a id="plot_id213481832_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id213481832" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id118963654_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id118963654" data-renderer="canvas">Canvas</a>
+<a id="plot_id213481832_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id213481832" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id118963654_download" class="ggvis-download" data-plot-id="plot_id118963654">Download</a>
+<a id="plot_id213481832_download" class="ggvis-download" data-plot-id="plot_id213481832">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id118963654_spec = {
+var plot_id213481832_spec = {
   "data": [
     {
       "name": ".0",
       "format": {
         "type": "csv",
         "parse": {
-          "reactive_118226636": "number",
+          "reactive_908107414": "number",
           "Sepal.Width": "number",
           "Sepal.Length": "number"
         }
       },
-      "values": "\"reactive_118226636\",\"Sepal.Width\",\"Sepal.Length\"\n505,3.5,5.1\n505,3,4.9\n505,3.2,4.7\n505,3.1,4.6\n505,3.6,5\n505,3.9,5.4\n505,3.4,4.6\n505,3.4,5\n505,2.9,4.4\n505,3.1,4.9\n505,3.7,5.4\n505,3.4,4.8\n505,3,4.8\n505,3,4.3\n505,4,5.8\n505,4.4,5.7\n505,3.9,5.4\n505,3.5,5.1\n505,3.8,5.7\n505,3.8,5.1\n505,3.4,5.4\n505,3.7,5.1\n505,3.6,4.6\n505,3.3,5.1\n505,3.4,4.8\n505,3,5\n505,3.4,5\n505,3.5,5.2\n505,3.4,5.2\n505,3.2,4.7\n505,3.1,4.8\n505,3.4,5.4\n505,4.1,5.2\n505,4.2,5.5\n505,3.1,4.9\n505,3.2,5\n505,3.5,5.5\n505,3.6,4.9\n505,3,4.4\n505,3.4,5.1\n505,3.5,5\n505,2.3,4.5\n505,3.2,4.4\n505,3.5,5\n505,3.8,5.1\n505,3,4.8\n505,3.8,5.1\n505,3.2,4.6\n505,3.7,5.3\n505,3.3,5\n505,3.2,7\n505,3.2,6.4\n505,3.1,6.9\n505,2.3,5.5\n505,2.8,6.5\n505,2.8,5.7\n505,3.3,6.3\n505,2.4,4.9\n505,2.9,6.6\n505,2.7,5.2\n505,2,5\n505,3,5.9\n505,2.2,6\n505,2.9,6.1\n505,2.9,5.6\n505,3.1,6.7\n505,3,5.6\n505,2.7,5.8\n505,2.2,6.2\n505,2.5,5.6\n505,3.2,5.9\n505,2.8,6.1\n505,2.5,6.3\n505,2.8,6.1\n505,2.9,6.4\n505,3,6.6\n505,2.8,6.8\n505,3,6.7\n505,2.9,6\n505,2.6,5.7\n505,2.4,5.5\n505,2.4,5.5\n505,2.7,5.8\n505,2.7,6\n505,3,5.4\n505,3.4,6\n505,3.1,6.7\n505,2.3,6.3\n505,3,5.6\n505,2.5,5.5\n505,2.6,5.5\n505,3,6.1\n505,2.6,5.8\n505,2.3,5\n505,2.7,5.6\n505,3,5.7\n505,2.9,5.7\n505,2.9,6.2\n505,2.5,5.1\n505,2.8,5.7\n505,3.3,6.3\n505,2.7,5.8\n505,3,7.1\n505,2.9,6.3\n505,3,6.5\n505,3,7.6\n505,2.5,4.9\n505,2.9,7.3\n505,2.5,6.7\n505,3.6,7.2\n505,3.2,6.5\n505,2.7,6.4\n505,3,6.8\n505,2.5,5.7\n505,2.8,5.8\n505,3.2,6.4\n505,3,6.5\n505,3.8,7.7\n505,2.6,7.7\n505,2.2,6\n505,3.2,6.9\n505,2.8,5.6\n505,2.8,7.7\n505,2.7,6.3\n505,3.3,6.7\n505,3.2,7.2\n505,2.8,6.2\n505,3,6.1\n505,2.8,6.4\n505,3,7.2\n505,2.8,7.4\n505,3.8,7.9\n505,2.8,6.4\n505,2.8,6.3\n505,2.6,6.1\n505,3,7.7\n505,3.4,6.3\n505,3.1,6.4\n505,3,6\n505,3.1,6.9\n505,3.1,6.7\n505,3.1,6.9\n505,2.7,5.8\n505,3.2,6.8\n505,3.3,6.7\n505,3,6.7\n505,2.5,6.3\n505,3,6.5\n505,3.4,6.2\n505,3,5.9"
+      "values": "\"reactive_908107414\",\"Sepal.Width\",\"Sepal.Length\"\n505,3.5,5.1\n505,3,4.9\n505,3.2,4.7\n505,3.1,4.6\n505,3.6,5\n505,3.9,5.4\n505,3.4,4.6\n505,3.4,5\n505,2.9,4.4\n505,3.1,4.9\n505,3.7,5.4\n505,3.4,4.8\n505,3,4.8\n505,3,4.3\n505,4,5.8\n505,4.4,5.7\n505,3.9,5.4\n505,3.5,5.1\n505,3.8,5.7\n505,3.8,5.1\n505,3.4,5.4\n505,3.7,5.1\n505,3.6,4.6\n505,3.3,5.1\n505,3.4,4.8\n505,3,5\n505,3.4,5\n505,3.5,5.2\n505,3.4,5.2\n505,3.2,4.7\n505,3.1,4.8\n505,3.4,5.4\n505,4.1,5.2\n505,4.2,5.5\n505,3.1,4.9\n505,3.2,5\n505,3.5,5.5\n505,3.6,4.9\n505,3,4.4\n505,3.4,5.1\n505,3.5,5\n505,2.3,4.5\n505,3.2,4.4\n505,3.5,5\n505,3.8,5.1\n505,3,4.8\n505,3.8,5.1\n505,3.2,4.6\n505,3.7,5.3\n505,3.3,5\n505,3.2,7\n505,3.2,6.4\n505,3.1,6.9\n505,2.3,5.5\n505,2.8,6.5\n505,2.8,5.7\n505,3.3,6.3\n505,2.4,4.9\n505,2.9,6.6\n505,2.7,5.2\n505,2,5\n505,3,5.9\n505,2.2,6\n505,2.9,6.1\n505,2.9,5.6\n505,3.1,6.7\n505,3,5.6\n505,2.7,5.8\n505,2.2,6.2\n505,2.5,5.6\n505,3.2,5.9\n505,2.8,6.1\n505,2.5,6.3\n505,2.8,6.1\n505,2.9,6.4\n505,3,6.6\n505,2.8,6.8\n505,3,6.7\n505,2.9,6\n505,2.6,5.7\n505,2.4,5.5\n505,2.4,5.5\n505,2.7,5.8\n505,2.7,6\n505,3,5.4\n505,3.4,6\n505,3.1,6.7\n505,2.3,6.3\n505,3,5.6\n505,2.5,5.5\n505,2.6,5.5\n505,3,6.1\n505,2.6,5.8\n505,2.3,5\n505,2.7,5.6\n505,3,5.7\n505,2.9,5.7\n505,2.9,6.2\n505,2.5,5.1\n505,2.8,5.7\n505,3.3,6.3\n505,2.7,5.8\n505,3,7.1\n505,2.9,6.3\n505,3,6.5\n505,3,7.6\n505,2.5,4.9\n505,2.9,7.3\n505,2.5,6.7\n505,3.6,7.2\n505,3.2,6.5\n505,2.7,6.4\n505,3,6.8\n505,2.5,5.7\n505,2.8,5.8\n505,3.2,6.4\n505,3,6.5\n505,3.8,7.7\n505,2.6,7.7\n505,2.2,6\n505,3.2,6.9\n505,2.8,5.6\n505,2.8,7.7\n505,2.7,6.3\n505,3.3,6.7\n505,3.2,7.2\n505,2.8,6.2\n505,3,6.1\n505,2.8,6.4\n505,3,7.2\n505,2.8,7.4\n505,3.8,7.9\n505,2.8,6.4\n505,2.8,6.3\n505,2.6,6.1\n505,3,7.7\n505,3.4,6.3\n505,3.1,6.4\n505,3,6\n505,3.1,6.9\n505,3.1,6.7\n505,3.1,6.9\n505,2.7,5.8\n505,3.2,6.8\n505,3.3,6.7\n505,3,6.7\n505,2.5,6.3\n505,3,6.5\n505,3.4,6.2\n505,3,5.9"
     },
     {
       "name": "scale/x",
@@ -1427,7 +1427,7 @@ var plot_id118963654_spec = {
             "value": "#000000"
           },
           "size": {
-            "field": "data.reactive_118226636"
+            "field": "data.reactive_908107414"
           },
           "opacity": {
             "value": 0.5
@@ -1486,7 +1486,7 @@ var plot_id118963654_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id118963654").parseSpec(plot_id118963654_spec);
+ggvis.getPlot("plot_id213481832").parseSpec(plot_id213481832_spec);
 </script></p>
 </div>
 <div id="limits-to-interactivity" class="slide section level2">
